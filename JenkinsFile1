@@ -30,4 +30,4 @@ withCredentials([usernamePassword(credentialsId: 'dockercreds', passwordVariable
 }
 }
 }
-}
+

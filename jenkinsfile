@@ -4,7 +4,7 @@ stages {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/vikash-bunkar/star-agile-banking-finance.git'
+                git 'https://github.com/vikash-bunkar/star-agile-banking-finance1.git'
 
                 // Run Maven on a Unix agent.
                 sh "mvn -Dmaven.test.failure.ignore=true clean package"

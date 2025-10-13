@@ -13,7 +13,7 @@ stages {
         }
      stage('Create Docker Image') {
            steps {
-               sh 'docker build -t vikashbunkar/financeme:1.0.'
+               sh 'docker build -tvikashbunkar/financeme:1.0 .'
                     }
                 }
          stage('Docker-Login') {
@@ -26,7 +26,7 @@ withCredentials([usernamePassword(credentialsId: 'dockercreds', passwordVariable
 }
        stage('Push-Image') {
            steps {
-               sh 'docker push vikash-bunkar/financeme:1.0'
+               sh 'docker push vikash-bunkar/financeme:1.0.'
     }
 }
 }
